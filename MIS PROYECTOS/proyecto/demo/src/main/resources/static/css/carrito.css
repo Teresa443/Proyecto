@@ -1,0 +1,90 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100%;
+    background-color: #f7f7f7; /* Fondo claro para la página */
+}
+
+/* Contenedor principal */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+}
+
+/* Título de la página */
+h1 {
+    color: #8a2be2; /* Color del título */
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+/* Contenedor del carrito */
+.carrito-container {
+    width: 80%;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    overflow-y: auto; /* Permitir scroll si hay muchos productos */
+    max-height: 500px; /* Limitar la altura del contenedor */
+}
+
+/* Estilo de la tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px; /* Espaciado inferior para el total */
+}
+
+th, td {
+    border: 1px solid #cb6ce6; /* Bordes de la tabla */
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #8a2be2; /* Color de fondo de los encabezados */
+    color: white; /* Color del texto */
+}
+
+/* Estilo para las imágenes */
+td img {
+    width: 50px;
+    height: auto;
+}
+
+/* Estilo del total */
+#total {
+    font-size: 1.5rem;
+    color: #8a2be2;
+}
+
+/* Botón para finalizar compra */
+.finalizar-btn {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    background-color: #8a2be2;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+.finalizar-btn:hover {
+    background-color: #3a0066; /* Color más oscuro al pasar el ratón */
+}
+
+/* Mensaje cuando el carrito está vacío */
+.empty-cart {
+    text-align: center;
+    color: #8a2be2;
+    font-size: 1.2rem;
+    margin-top: 20px;
+}

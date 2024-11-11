@@ -1,0 +1,147 @@
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100%;
+}
+
+/* Contenedor principal */
+.container {
+    display: flex;
+    height: 100%;
+}
+
+/* Lado del formulario */
+.form-side {
+    width: 50%;
+    background-color: #cb6ce6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    border-radius: 0 20px 20px 0;
+}
+
+/* Lado de la imagen */
+.image-side {
+    width: 50%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+/* Contenedor del formulario */
+.form-container {
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+}
+
+/* Títulos y textos del formulario */
+
+h1 {
+    color: white;
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+p {
+    color: white;
+    margin-bottom: 20px;
+}
+
+/* Estilo del formulario */
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estilos de los campos de entrada */
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #8a2be2;
+    border-radius: 20px;
+    background-color: white;
+    color: #8a2be2;
+    font-size: 0.9rem;
+}
+
+input::placeholder {
+    color: #cb6ce6;
+}
+
+
+/* Estilos del botón */
+
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    background-color: #8a2be2;
+    color: white;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #3a0066;
+}
+
+
+/* Enlace de inicio de sesión */
+
+.login-link {
+    margin-top: 15px;
+    text-align: center;
+    color: white;
+}
+
+.login-link a {
+    color: white;
+    text-decoration: underline;
+    
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+
+
+/* Animación de los cubos */
+.cubes {
+    position: relative;
+    width: 200px;
+    height: 300px;
+}
+
+.cube {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: #cb6ce6;
+    border-radius: 8px;
+    animation: float 5s infinite ease-in-out;
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0) rotate(0deg);
+    }
+
+    50% {
+        transform: translateY(-20px) rotate(180deg);
+    }
+}

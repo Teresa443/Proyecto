@@ -1,0 +1,71 @@
+/* General */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+}
+
+.factura-container {
+    width: 80%;
+    margin: 20px auto;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #8a2be2;
+}
+
+.factura-info {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #6ce680;
+    border-radius: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #cb6ce6;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #201927;
+    color: white;
+}
+
+tbody tr:hover {
+    background-color: #f0f0f0; /* Resaltar fila al pasar el ratón */
+}
+
+/* Estilos para el botón "Seguir Comprando" */
+.seguir-comprando {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#seguir-comprando-btn {
+    background-color: #8a2be2;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#seguir-comprando-btn:hover {
+    background-color: #6b21d1;
+}
